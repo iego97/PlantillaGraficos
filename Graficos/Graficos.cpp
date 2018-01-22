@@ -71,6 +71,9 @@ int main()
 		exit(EXIT_FAILURE);
 	}
 
+	const GLubyte *version = glGetString(GL_VERSION);
+	cout << "Version de OpenGl: " << version << endl;
+
 	//Ciclo de dibujo
 	while (!glfwWindowShouldClose(window))
 	{
